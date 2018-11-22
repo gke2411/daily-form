@@ -1,0 +1,92 @@
+*{
+	box-sizing: border-box;
+}
+html{
+	font-size: 10px;
+	height: 100%;
+}
+body{
+	font-family: Arial, sans-serif;
+	font-size: 1.3rem;
+	color: #7a7b7f;
+	min-height: 100%;
+    background: linear-gradient(45deg, rgba(255,81,47,1) 0%, rgba(221,36,118,1) 80%);
+}
+
+a{
+	color: #dd2476;
+	text-decoration: none;
+}
+.payment{
+    margin: auto;
+    padding: 30px;
+    width: 460px;
+    height: 470px;
+    background-color: #fff;
+    position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	border-radius: 5px;
+	&__title{
+		margin: 0 0 20px 0;
+		padding: 0;
+		font-size: 2.4rem;
+		color: #1b1c1d;
+		&:before{
+			content: url('../img/sign_up_icon.png');
+			width: 30px;
+			height: 30px;
+			margin-right: 5px;
+		}
+	}
+	&__subtitle{
+		font-size: 1.3rem;
+		line-height: 1.5;
+	}
+	&__footer{
+		font-size: 1.2rem;
+		line-height: 1.5;
+	}
+}
+
+.form{
+	margin: 15px 0 0 0;
+	& input{
+		background-color: #f0f0f0;
+		padding: 12px;
+		border-radius: 5px;
+		margin: 15px 0 0 0;
+		font-size: 1.4rem;
+		// outline: none;
+		border: transparent;
+	}
+	&__text{
+		width: 48%;
+	}
+	&__email,
+	&__pwd{
+		width: 100%;
+	}
+	&__container{
+		width: 100%;
+	}
+	&__btn{
+		width: 100%;	
+		display: block;
+		margin: 15px 0;
+		padding: 15px;
+		text-align: center;
+		background-color: #ea355a;
+		color: #fff;
+		border-radius: 5px;
+		border: transparent;
+		border-bottom: #bd1962 3px solid;
+		font-size: 1.8rem;
+		font-weight: 700;
+	}
+	&__input-row{
+			display: flex;
+			justify-content: space-between;
+		}
+}
